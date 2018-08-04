@@ -1,6 +1,7 @@
 #include "Employee.h"
 #include "DebugHelper.h"
 #include "SalaryRepo.h"
+#include <iostream>
 
 int Employee::getId() const {
     return id;
@@ -22,3 +23,4 @@ double Employee::getMonthlySalary() {
     DebugHelper::info("query monthly salary id:" + to_string(id));
     return SalaryRepo::get(this->id);
 }
+

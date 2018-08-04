@@ -2,6 +2,9 @@
 #define CPP_OTP_EMPLOYEE_H
 
 #include <ctime>
+#include <string>
+
+using namespace std;
 
 class Employee {
 
@@ -19,7 +22,7 @@ public:
     virtual double getYearlyBonus() = 0;
 
 protected:
-    double getMonthlySalary();
+    virtual double getMonthlySalary();
 
 };
 

@@ -1,0 +1,8 @@
+#include <ctime>
+
+#ifndef CPP_BIRTHDAY_TODAY_PROVIDER_H
+#define CPP_BIRTHDAY_TODAY_PROVIDER_H
+
+tm* getToday();
+
+#endif //CPP_BIRTHDAY_TODAY_PROVIDER_H
