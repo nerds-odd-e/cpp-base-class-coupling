@@ -14,10 +14,10 @@ namespace {
         NiceMock<SpyLessThanOneYearEmployee> lessThanOneYearEmployee;
         lessThanOneYearEmployee.setId(91);
         tm date = {0, 0, 0, 26, 11, 117};
-        lessThanOneYearEmployee.setStartWorkingDate(&date);
+        lessThanOneYearEmployee.setStartWorkingDate(date);
         ON_CALL(lessThanOneYearEmployee, getMonthlySalary()).WillByDefault(Return(1200));
         tm today = {0, 0, 0, 28, 5, 118};
-        setToday(&today);
+        setToday(today);
 
         double actual = lessThanOneYearEmployee.getYearlyBonus();
         ASSERT_DOUBLE_EQ(600, actual);

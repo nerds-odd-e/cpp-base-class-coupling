@@ -5,12 +5,12 @@
 
 static tm* today;
 
-void setToday(tm* aToday) {
-    today = aToday;
+void setToday(tm& aToday) {
+    today = &aToday;
 }
 
-tm* getToday() {
-    return today;
+tm& getToday() {
+    return *today;
 }
 
 #endif //CPP_BIRTHDAY_TODAY_PROVIDER_H

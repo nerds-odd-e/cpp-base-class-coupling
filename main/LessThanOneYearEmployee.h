@@ -12,7 +12,7 @@ protected:
 
 private:
     double workingYear();
-    double getDaysBetween(tm start, tm end);
+    double getDaysBetween(tm& start, tm& end);
 
 };
 

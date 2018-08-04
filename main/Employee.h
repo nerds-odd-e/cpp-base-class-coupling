@@ -14,10 +14,10 @@ private:
 
 public:
     int getId() const;
-    tm *getStartWorkingDate() const;
+    tm& getStartWorkingDate() const;
 
     void setId(int id);
-    void setStartWorkingDate(tm *startWorkingDate);
+    void setStartWorkingDate(tm& startWorkingDate);
 
     virtual double getYearlyBonus() = 0;
 

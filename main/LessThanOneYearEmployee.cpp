@@ -17,11 +17,11 @@ double LessThanOneYearEmployee::getYearlyBonus() {
 double LessThanOneYearEmployee::workingYear() {
     info("--get working year--");
 
-    double year = round(getDaysBetween(*getStartWorkingDate(), *getToday()) / 365 * 100) / 100;
+    double year = round(getDaysBetween(getStartWorkingDate(), getToday()) / 365 * 100) / 100;
     return year > 1 ? 1 : year;
 }
 
-double LessThanOneYearEmployee::getDaysBetween(tm start, tm end) {
+double LessThanOneYearEmployee::getDaysBetween(tm& start, tm& end) {
     return difftime(mktime(&end), mktime(&start)) / (60 * 60 * 24);
 }
 

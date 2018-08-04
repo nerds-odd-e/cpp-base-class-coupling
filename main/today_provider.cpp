@@ -4,7 +4,7 @@
 
 #include "today_provider.h"
 
-tm* getToday() {
+tm& getToday() {
     time_t now = time(0);
-    return localtime(&now);
+    return *localtime(&now);
 }

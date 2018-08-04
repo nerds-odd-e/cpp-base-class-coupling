@@ -11,12 +11,12 @@ void Employee::setId(int id) {
     Employee::id = id;
 }
 
-tm *Employee::getStartWorkingDate() const {
-    return startWorkingDate;
+tm& Employee::getStartWorkingDate() const {
+    return *startWorkingDate;
 }
 
-void Employee::setStartWorkingDate(tm *startWorkingDate) {
-    Employee::startWorkingDate = startWorkingDate;
+void Employee::setStartWorkingDate(tm& startWorkingDate) {
+    Employee::startWorkingDate = &startWorkingDate;
 }
 
 double Employee::getMonthlySalary() {
