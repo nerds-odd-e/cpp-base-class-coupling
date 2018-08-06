@@ -7,6 +7,7 @@ To build the code and test, please:
     cmake ..
     make
 ```
+
 To run the code, please execute `./main/cpp-base-class-coupling`
 
 To run the test, please execute `./test/cpp-base-class-coupling_test`
